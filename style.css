@@ -197,7 +197,7 @@ hr {
   /* セクション */
   .mainpage {
     padding: 40px 15px;
-    max-width: 350px;
+    max-width: 200px;
   }
 
   .section-title {
@@ -205,7 +205,7 @@ hr {
   }
 
   .section-photo {
-    width: 300px;                  /* 画像を画面幅に合わせる */
+    width: 200px;                  /* 画像を画面幅に合わせる */
   }
 
   .section-text {
@@ -215,6 +215,18 @@ hr {
   .name {
     padding: 20px;
   }
+}
+
+.artwork img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+}
+
+.artwork-text {
+  display: block;
+  text-align: left;
+  width: 250px;
 }
 
 
