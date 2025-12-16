@@ -1,0 +1,279 @@
+/* 余白をリセットする */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Shippori Mincho';
+}
+
+/* その他のページ */
+.header {
+  height: 50px;
+}
+
+.nav {
+  position: fixed;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  transition: background-color 0.3s; 
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav.scrolled {
+  background-color: white;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo a {
+  font-size: 33px !important;
+}
+
+.nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+}
+
+.nav a:hover {
+  color: rgb(170, 60, 60)
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+/* セクション */
+hr {
+  margin: 20px auto;
+}
+
+.mainpage {
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 30px;
+}
+
+.section-photo {
+  width: 500px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.name h2,
+.name h3 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.section-text {
+  line-height: 2;
+  text-align: left;
+}
+
+.text {
+  text-align: center;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.works-title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.works img {
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.works img:hover {
+  opacity: 0.6;
+}
+
+.works h3 {
+  grid-column: 1 / -1;
+  font-size: 18px;
+  background-color: rgb(170, 60, 60);
+  color: white;
+  padding: 10px;
+}
+
+.artwork {
+  display: grid;
+  padding-top: 75px;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.artwork img {
+  display: block;
+  width: 100%;
+  max-width: 550px;
+}
+
+.artwork-text {
+  display: block;
+  text-align: left;
+  width: 550px;
+}
+
+.button {
+  display: block;
+  width: 55px;
+  justify-content: center;
+  padding: 10px 20px; 
+  background: rgb(170, 60, 60);
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background: #fff;
+  color: rgb(170, 60, 60);
+}
+
+/* =============================
+   スマホ（〜480px）
+============================= */
+@media (max-width: 375px) {
+
+  /* 固定ナビ */
+  .nav {
+    padding: 0 20px;              /* 左右の余白を縮小 */
+    height: 60px;                 /* 少し低めに */
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo a {
+    font-size: 26px !important;
+  }
+
+  .nav ul {
+    gap: 16px;                    /* ボタン間の間隔を縮小 */
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  /* セクション */
+  .mainpage {
+    padding: 40px 15px;
+    max-width: 350px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-photo {
+    width: 300px;                  /* 画像を画面幅に合わせる */
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .name {
+    padding: 20px;
+  }
+}
+
+
+/* =============================
+   タブレット（481〜768px）
+============================= */
+@media (max-width: 768px) {
+
+  .nav {
+    padding: 0 30px;
+    height: 70px;
+  }
+
+  .logo a {
+    font-size: 30px !important;
+  }
+
+  .nav ul {
+    gap: 24px;
+  }
+
+  .nav a {
+    font-size: 22px;
+  }
+
+  .mainpage {
+    padding: 50px 20px;
+    max-width: 600px;
+  }
+
+  .section-photo {
+    width: 450px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+
+/* =============================
+   小さめPC（769〜1024px）
+============================= */
+@media (max-width: 1024px) {
+
+  .nav {
+    padding: 0 40px;
+    height: 75px;
+  }
+
+  .nav ul {
+    gap: 28px;
+  }
+
+  .mainpage {
+    max-width: 600px;
+  }
+
+  .section-photo {
+    width: 450px;
+  }
+}
