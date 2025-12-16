@@ -183,15 +183,15 @@ hr {
   }
 
   .logo a {
-    font-size: 26px !important;
+    font-size: 20px !important;
   }
 
   .nav ul {
-    gap: 16px;                    /* ボタン間の間隔を縮小 */
+    gap: 13px;                    /* ボタン間の間隔を縮小 */
   }
 
   .nav a {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   /* セクション */
